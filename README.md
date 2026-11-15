@@ -1,17 +1,54 @@
-# React + Vite
+# Pokémon Memory Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A memory game built with React. Click every Pokémon once, but never the same one twice.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View the live demo]([https://your-live-demo-link.com](https://memory-card-game-from-mem.netlify.app)
 
-## React Compiler
+## How to Play
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Choose how many Pokémon to play with (1 to 151) and press Start.
+2. Click any Pokémon card to score a point.
+3. After every click, the cards shuffle into a new order.
+4. Keep clicking Pokémon you have not picked yet.
+5. Click the same Pokémon twice and the round ends:
+   - Your score resets to 0.
+   - A fresh set of random Pokémon is loaded.
+6. Your highest score is kept across rounds, so try to beat it.
 
-## Expanding the Oxlint configuration
+You win a round by clicking every Pokémon on the board exactly once.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# memory-card
+## Features
+
+- Random Pokémon from the original 151, fetched live from PokéAPI
+- Official artwork for every card
+- Cards shuffle after each correct click
+- Current score and best score tracking
+- Adjustable number of cards per game
+- Responsive grid layout
+
+## Tech Stack
+
+| Category | Tool |
+| --- | --- |
+| UI library | React |
+| Build tool | Vite |
+| Language | JavaScript (ES6+), JSX |
+| Styling | CSS (Grid, Flexbox) |
+| Data | [PokéAPI](https://pokeapi.co/) |
+| Linting | Oxlint |
+
+## What I Learned
+
+- Managing state across components with `useState` and props
+- Fetching data on mount with `useEffect`, including cleanup
+- Resetting a component by changing its `key`
+- Updating state immutably (copying before shuffling or editing)
+- Reading form input on submit with `FormData`
+- Building layouts with CSS Grid, Flexbox and absolute positioning
+
+## Credits
+
+- Pokémon data and artwork from [PokéAPI](https://pokeapi.co/).
+- Pokémon and Pokémon character names are trademarks of Nintendo, Game Freak and The Pokémon Company. This is a non-commercial learning project.
