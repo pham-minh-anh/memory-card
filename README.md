@@ -4,7 +4,7 @@ A memory game built with React. Click every Pokémon once, but never the same on
 
 ## Live Demo
 
-[View the live demo]([https://memory-card-game-from-mem.netlify.app])
+[View the live demo](https://memory-card-game-from-mem.netlify.app)
 
 ## How to Play
 
