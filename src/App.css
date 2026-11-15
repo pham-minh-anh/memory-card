@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #04110d 0%,
+    #0e2f25 8%,
+    #2b6e58 16%,
+    #5cb898 26%,
+    #81e0c0 40%,
+    #81e0c0 100%
+  );
+  background-attachment: fixed;
+}
+
+h1 {
+  color: rgb(212, 215, 193);
+  margin-left: 10px;
+}
+p,
+label {
+  color: rgb(107, 107, 100);
+  margin-left: 10px;
+}
+
+.instructions,
+label {
+  color: rgb(185, 184, 146);
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+  padding: 3px 5px;
+  margin-right: 5px;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 2px 5px;
+  background-color: rgb(230, 228, 190);
+}
+
+.board {
+  position: relative; /* scoreboard is positioned relative to this */
+  max-width: 1350px;
+  margin: 48px auto 0; /* top margin leaves room for the scoreboard */
+  padding: 0 16px;
+}
+
+.scoreboard {
+  position: absolute;
+  bottom: 100%; /* sits just above the board */
+  right: 16px; /* matches .board's padding */
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px; /* small gap above the cards */
+}
+
+.scoreboard .scores {
+  margin: 0;
+}
+
+.scores {
+  color: #f0b283;
+}
